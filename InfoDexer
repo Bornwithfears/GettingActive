@@ -1,0 +1,270 @@
+local InfoDexer = Instance.new("ScreenGui")
+local Back = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Front = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Username = Instance.new("TextLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local GuiStroke = Instance.new("UIStroke")
+
+--Properties:
+
+InfoDexer.Name = "InfoDexer"
+InfoDexer.Parent = game:GetService("CoreGui")
+InfoDexer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Back.Name = "Back"
+Back.Parent = InfoDexer
+Back.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.341541767, 0, 0.291620106, 0)
+Back.Size = UDim2.new(0.316916496, 0, 0.406703919, 0)
+GuiStroke.Parent = Back
+GuiStroke.LineJoinMode = Enum.LineJoinMode.Round
+GuiStroke.Color = Color3.fromRGB(26, 255, 0)
+GuiStroke.Thickness = 1.7
+
+UICorner.Parent = Back
+
+Front.Name = "Front"
+Front.Parent = Back
+Front.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Front.BackgroundTransparency = 1.000
+Front.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Front.BorderSizePixel = 0
+Front.Position = UDim2.new(0.0206587501, 0, 0.0302197803, 0)
+Front.Size = UDim2.new(0.954391897, 0, 0.936813176, 0)
+
+TextLabel.Parent = Front
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.00605403911, 0, -0.01617736, 0)
+TextLabel.Size = UDim2.new(1.01068759, 0, 0.296187669, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "INFO DEXER"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 4)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 100.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = TextLabel
+UIAspectRatioConstraint.AspectRatio = 5.654
+
+UITextSizeConstraint.Parent = TextLabel
+
+ImageLabel.Parent = Front
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.423008859, 0, 0.281524926, 0)
+ImageLabel.Size = UDim2.new(0.152212396, 0, 0.252199411, 0)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint_2.Parent = ImageLabel
+
+Username.Name = "Username"
+Username.Parent = Front
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(-0.00292018102, 0, 0.567400336, 0)
+Username.Size = UDim2.new(1.0070796, 0, 0.0909090862, 0)
+Username.Font = Enum.Font.ArialBold
+Username.Text = "@username"
+Username.TextColor3 = Color3.fromRGB(34, 255, 0)
+Username.TextScaled = true
+Username.TextSize = 100.000
+Username.TextWrapped = true
+
+UIAspectRatioConstraint_3.Parent = Username
+UIAspectRatioConstraint_3.AspectRatio = 18.355
+
+UITextSizeConstraint_2.Parent = Username
+UITextSizeConstraint_2.MaxTextSize = 30
+
+TextBox.Parent = Front
+TextBox.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.166371688, 0, 0.715542495, 0)
+TextBox.Size = UDim2.new(0.670796454, 0, 0.105571851, 0)
+TextBox.Font = Enum.Font.Unknown
+TextBox.PlaceholderColor3 = Color3.fromRGB(19, 223, 0)
+TextBox.PlaceholderText = "|| Input username ||"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(4, 255, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_2.Parent = TextBox
+
+UIAspectRatioConstraint_4.Parent = TextBox
+UIAspectRatioConstraint_4.AspectRatio = 10.528
+
+UITextSizeConstraint_3.Parent = TextBox
+UITextSizeConstraint_3.MaxTextSize = 14
+
+TextButton.Parent = Front
+TextButton.BackgroundColor3 = Color3.fromRGB(60, 255, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.384070784, 0, 0.8621701, 0)
+TextButton.Size = UDim2.new(0.233628318, 0, 0.114369504, 0)
+TextButton.Font = Enum.Font.ArialBold
+TextButton.Text = "Dex"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_3.Parent = TextButton
+
+UIAspectRatioConstraint_5.Parent = TextButton
+UIAspectRatioConstraint_5.AspectRatio = 3.385
+
+UITextSizeConstraint_4.Parent = TextButton
+UITextSizeConstraint_4.MaxTextSize = 39
+
+UIAspectRatioConstraint_6.Parent = Front
+UIAspectRatioConstraint_6.AspectRatio = 1.657
+
+TextLabel_2.Parent = Front
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.817699552, 0, 0.902106225, 0)
+TextLabel_2.Size = UDim2.new(0.187981114, 0, 0.0550889336, 0)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "Made by"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 255, 4)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 100.000
+TextLabel_2.TextWrapped = true
+
+UIAspectRatioConstraint_7.Parent = TextLabel_2
+UIAspectRatioConstraint_7.AspectRatio = 5.654
+
+UITextSizeConstraint_5.Parent = TextLabel_2
+
+TextLabel_3.Parent = Front
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.817699552, 0, 0.957639277, 0)
+TextLabel_3.Size = UDim2.new(0.187981114, 0, 0.0550889373, 0)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "@yourfavoritefear"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 255, 4)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 100.000
+TextLabel_3.TextWrapped = true
+
+UIAspectRatioConstraint_8.Parent = TextLabel_3
+UIAspectRatioConstraint_8.AspectRatio = 5.654
+
+UITextSizeConstraint_6.Parent = TextLabel_3
+
+UIAspectRatioConstraint_9.Parent = Back
+UIAspectRatioConstraint_9.AspectRatio = 1.626
+
+-- Script:
+
+local function GNNPZM_fake_script() -- InfoDexer.Dexer 
+	local script = Instance.new('LocalScript', InfoDexer)
+
+	local Front = script.Parent.Back.Front
+	local function autofill(arg)
+		for i,v in pairs(game:service"Players":GetChildren()) do
+			if v.Name:lower():find(arg:lower()) or v.DisplayName:lower():find(arg:lower()) then
+				return v.Name
+			end
+		end
+	end
+
+	Front.TextBox.FocusLost:Connect(function()
+		local plr = autofill(Front.TextBox.Text)
+		if plr then
+			getgenv().Player = game:service"Players"[plr]
+			Front.ImageLabel.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+			Front.Username.Text = Player.Name
+		end
+	end)
+	Front.TextButton.MouseButton1Click:Connect(function()
+		local function DexInfo()
+			function comma_value(amount)
+				local formatted = amount
+				while true do  
+					formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+					if (k==0) then
+						break
+					end
+				end
+				return formatted
+			end
+			local Credits = "\n\n || Made by - <@!537034346712793110> ||"
+			local Title = "# Player ("..Player.Name..") Info Dexed!\n"
+			local Outfit = "# Outfit\n"
+			local DisplaySTR = "**Display, **\n```"..tostring(Player.DisplayName).."```\n"
+			local UserSTR = "**Username, **\n```"..tostring(Player.Name).."```\n"
+			local UserIdSTR = "**UserId, **\n```"..tostring(Player.UserId).."```\n"
+			local DHC = "**Dahood Cash, **\n```$"..tostring(comma_value(Player.DataFolder.Currency.Value)).."```\n"
+			local Wanted = "**Wanted, **\n```$"..tostring(comma_value(Player.DataFolder.Information.Wanted.Value)).."```\n"
+			local BackPackString = ""
+			for _,v in pairs(Player.Backpack:GetChildren()) do
+				BackPackString = BackPackString..v.Name..", "
+			end
+			local BackPack = "**BackPack, **\n```"..tostring(BackPackString).."```\n"
+			local ShirtCat = "https://www.roblox.com/catalog/"..tostring(Player.Character.Humanoid.HumanoidDescription.Shirt)
+			local pantsCat = "https://www.roblox.com/catalog/"..tostring(Player.Character.Humanoid.HumanoidDescription.Pants)
+			local Shirt = "**Shirt, **\n\n"..ShirtCat.."\n\n"
+			local Pants = "**Pants, **\n\n"..pantsCat.."\n"
+			local response = request({ Url = Value.WebHook,
+				Method = 'POST',
+				Headers = {
+					['Content-Type'] = 'application/json' 
+				},
+				Body = game:GetService('HttpService'):JSONEncode({
+					["embeds"] = {
+						{
+							["title"] = "",
+							["description"] = Title..DisplaySTR..UserSTR..UserIdSTR..DHC..Wanted..BackPack..Outfit..Shirt..Pants..Credits,
+							["color"] = 0xf50202,
+						}
+					}
+				}) 
+			});
+			BackPackString = ""
+		end
+		DexInfo()
+	end)
+end
+coroutine.wrap(GNNPZM_fake_script)()
