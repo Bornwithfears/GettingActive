@@ -1,0 +1,82 @@
+local function FindKnife()
+    if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool") then
+        local Player = game.Players.LocalPlayer
+        local Tool = Player.Character:FindFirstChildWhichIsA("Tool")
+        local Mesh = Tool.Default.Mesh
+        local Weapon = Player.Character[Tool.Name]
+        local Equipped = game:GetService('HttpService'):JSONDecode(Player.DataFolder.Information.EquipSkins.Value)
+        local Skin = Equipped[Weapon.Name]
+        local WebHook = Webhook
+        if Equipped[Weapon.Name] then
+            local Skin = Equipped[Weapon.Name]
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+	            Title = "Getting skin",
+	            Text = "Please Wait..",
+            })
+            wait(2)
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+	            Title = "Got ["..Skin.."]",
+	            Text = "Got skin, Now getting assets...",
+            })
+            wait(2)
+        end
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+	        Title = "MeshId got",
+	        Text = "Getting Texture for mesh...",
+        })
+        wait(1)
+        if Mesh.TextureID == "" then
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+	            Title = "No Texture Found!",
+	            Text = "Getting SurfaceAppearance...",
+            })
+            SurfaceAppearance = Mesh.SurfaceAppearance
+            wait(1)
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+	            Title = "SurfaceAppearance got",
+	            Text = "Check Discord! Stolen By - Fear",
+            })
+            local response = request({ Url = Webhook,
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json' 
+                },
+                Body = game:GetService('HttpService'):JSONEncode({
+                    ["embeds"] = {
+                        {
+                            ["title"] = "",
+                            ["description"] = "# ["..Skin.."] - Stolen By @YourFavoriteFear\n# Mesh Id\n\n**Mesh Id:**\n```ansi\n[2;31m"..Mesh.MeshId.."[0m```\n# SurfaceAppearance\n**Color Map:**\n```ansi\n[2;31m"..SurfaceAppearance.ColorMap.."[0m```\n**Metalness Map:**\n```ansi\n[2;31m"..SurfaceAppearance.MetalnessMap.."[0m```\n**Normal Map:**\n```ansi\n[2;31m"..SurfaceAppearance.NormalMap.."[0m```\n**Roughness Map:**\n```ansi\n[2;31m"..SurfaceAppearance.RoughnessMap.."[0m```\n>>>>>>>>>>>>>>>>>||Made by <@537034346712793110> ||<<<<<<<<<<<<<<<<<<<<<<<",
+                            ["color"] = 0x0a0a0a,
+                        }
+                    }
+                }) 
+            });
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+	            Title = "TextureID got",
+	            Text = "Check Discord! Stolen By - Fear",
+            })
+            local response = request({ Url = Webhook,
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json' 
+                },
+                Body = game:GetService('HttpService'):JSONEncode({
+                    ["embeds"] = {
+                        {
+                            ["title"] = "",
+                            ["description"] = "# ["..Skin.."] - Stolen By @YourFavoriteFear\n# Mesh Id\n**Mesh Id:**\n"..Mesh.MeshId.."\n# Texture ID\n**Texture ID:**\n"..Mesh.TextureID.."\n\n>>>>>>>>>>>>>>>>>||Made by <@537034346712793110> ||<<<<<<<<<<<<<<<<<<<<<<<",
+                            ["color"] = 0x0a0a0a,
+                        }
+                    }
+                }) 
+            });
+        end
+    else
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+	        Title = "Please equip a knife!",
+	        Text = "This is a knife stealing script\nWhy would u not hold the knife.\nWyd actually. LOL.",
+        })
+    end
+end
+FindKnife()
